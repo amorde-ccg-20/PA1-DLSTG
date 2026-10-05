@@ -1,0 +1,57 @@
+# Local environments and scratch work
+/dl4stg/
+/.venv/
+/venv/
+/tmp/
+/.agents/
+/.codex/
+/.vscode/
+/.idea/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Training artifacts; selected report evidence is tracked separately
+**/checkpoints/
+*.pt
+*.pth
+*.ckpt
+/Question 2 - Leaderboard/outputs/*
+
+# Keep submission-only deliverables on this branch
+/Question 1-original/
+/DL4STG-PA1.pdf
+/Question 1/results/design/*.csv
+/Question 1/results/design/*.tex
+/Question 2 - Leaderboard/README.md
+/Question 2 Progress.md
+/Question 2 TODOs.md
+/Question 2 Analysis.md
+/explained_q2.md
+/SUBMISSION_CHECKLIST.md
+/hypotheses.md
+/implementation Todos.md
+/Report/figures/*.png
+/image.png
+/terminal-seed.txt
+
+# LaTeX intermediate files (keep source and PDFs)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

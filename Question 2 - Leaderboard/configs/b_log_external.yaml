@@ -1,0 +1,27 @@
+data:
+  data_dir: Data
+  seq_len: 192
+  pred_len: 168
+  train_stride: 24
+  validation_origins: [40000, 41000, 42000, 43000]
+  target_transform: log1p
+  use_external: true
+
+model:
+  d_model: 64
+  n_heads: 4
+  e_layers: 2
+  moving_avg: 25
+  factor: 2.0
+  dropout: 0.10
+
+training:
+  epochs: 50
+  batch_size: 64
+  learning_rate: 0.0005
+  weight_decay: 0.00001
+  patience: 10
+  num_workers: 0
+  seeds: [7, 19, 31]
+
+output_dir: outputs/b_log_external
